@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.examples.KarateApi.KarateApi</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-06-13 10:54:03 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>uı automation test</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/examples/KarateApi/KarateApi.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">karate ui automation</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">uı automation test</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>31781</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure driver = {type:&#39;chromedriver&#39; , executable:&#39;src/test/java/chromedriver.exe&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">35</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">10:53:01.360 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>driver &quot;https://open.spotify.com&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">31746</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">10:53:33.173 src/test/java/examples/KarateApi/KarateApi.feature:5
+* driver &quot;https://open.spotify.com&quot;
+http call failed after 30010 milliseconds for url: http://localhost:9515/session/a93e770004e860f3c70d376afd25d825/url
+src/test/java/examples/KarateApi/KarateApi.feature:5
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref failed">6</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>scenario [run] failed</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">java.util.LinkedHashMap cannot be cast to java.lang.String
+java.lang.ClassCastException: java.util.LinkedHashMap cannot be cast to java.lang.String
+	at com.intuit.karate.driver.WebDriver.screenshot(WebDriver.java:511)
+	at com.intuit.karate.driver.WebDriver.screenshot(WebDriver.java:504)
+	at com.intuit.karate.driver.Driver.onFailure(Driver.java:491)
+	at com.intuit.karate.core.ScenarioRuntime.execute(ScenarioRuntime.java:500)
+	at com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:402)
+	at com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at com.intuit.karate.core.FeatureRuntime.run(FeatureRuntime.java:164)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at com.intuit.karate.core.SyncExecutorService.execute(SyncExecutorService.java:70)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at com.intuit.karate.Suite.run(Suite.java:235)
+	at com.intuit.karate.Runner$Builder.parallel(Runner.java:575)
+	at com.intuit.karate.cli.IdeMain.main(IdeMain.java:60)
+	at cucumber.api.cli.Main.main(Main.java:34)
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref failed">6</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>scenario [cleanup] failed</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">http call failed after 30014 milliseconds for url: http://localhost:9515/session/a93e770004e860f3c70d376afd25d825/window
+com.intuit.karate.KarateException: http call failed after 30014 milliseconds for url: http://localhost:9515/session/a93e770004e860f3c70d376afd25d825/window
+	at com.intuit.karate.core.ScenarioEngine.httpInvokeOnce(ScenarioEngine.java:586)
+	at com.intuit.karate.core.ScenarioEngine.httpInvoke(ScenarioEngine.java:545)
+	at com.intuit.karate.Http.method(Http.java:77)
+	at com.intuit.karate.Http.method(Http.java:86)
+	at com.intuit.karate.Http.delete(Http.java:103)
+	at com.intuit.karate.driver.WebDriver.close(WebDriver.java:342)
+	at com.intuit.karate.driver.WebDriver.quit(WebDriver.java:358)
+	at com.intuit.karate.core.ScenarioEngine.stop(ScenarioEngine.java:932)
+	at com.intuit.karate.core.ScenarioRuntime.afterRun(ScenarioRuntime.java:521)
+	at com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:426)
+	at com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at com.intuit.karate.core.FeatureRuntime.run(FeatureRuntime.java:164)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at com.intuit.karate.core.SyncExecutorService.execute(SyncExecutorService.java:70)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at com.intuit.karate.Suite.run(Suite.java:235)
+	at com.intuit.karate.Runner$Builder.parallel(Runner.java:575)
+	at com.intuit.karate.cli.IdeMain.main(IdeMain.java:60)
+	at cucumber.api.cli.Main.main(Main.java:34)
+Caused by: java.lang.RuntimeException: java.net.SocketTimeoutException: Read timed out
+	at com.intuit.karate.http.ApacheHttpClient.invoke(ApacheHttpClient.java:286)
+	at com.intuit.karate.core.ScenarioEngine.httpInvokeOnce(ScenarioEngine.java:576)
+	... 20 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at karate.org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at karate.org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at karate.org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+	at karate.org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at karate.org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at karate.org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at karate.org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at karate.org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at karate.org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at karate.org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at karate.org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at karate.org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at karate.org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at karate.org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at karate.org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at karate.org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.intuit.karate.http.ApacheHttpClient.invoke(ApacheHttpClient.java:273)
+	... 21 more
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

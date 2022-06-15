@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/examples\/KarateApi\/KarateApi[1:23]","start":1655232852689,"end":1655232853697,"title":"src\/test\/java\/examples\/KarateApi\/KarateApi[1:23] 21:54:12.689-21:54:13.697 Playlist kullanıcı bilgileri"},{"id":2,"group":1,"content":"src\/test\/java\/examples\/KarateApi\/KarateApi[2:30]","start":1655232853698,"end":1655232854333,"title":"src\/test\/java\/examples\/KarateApi\/KarateApi[2:30] 21:54:13.698-21:54:14.333 Hilal New Playlist adinda bir playlist yarat"},{"id":3,"group":1,"content":"src\/test\/java\/examples\/KarateApi\/KarateApi[3:38]","start":1655232854342,"end":1655232854622,"title":"src\/test\/java\/examples\/KarateApi\/KarateApi[3:38] 21:54:14.342-21:54:14.622 Bohemian Rhapsody sarkisini arat"},{"id":4,"group":1,"content":"src\/test\/java\/examples\/KarateApi\/KarateApi[4:48]","start":1655232854631,"end":1655232855243,"title":"src\/test\/java\/examples\/KarateApi\/KarateApi[4:48] 21:54:14.631-21:54:15.243 Sarkiyi olusturulan (Hilal New Playlist) playliste ekle"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

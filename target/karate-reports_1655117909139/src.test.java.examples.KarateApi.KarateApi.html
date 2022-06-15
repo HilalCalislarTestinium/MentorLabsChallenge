@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.examples.KarateApi.KarateApi</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-06-13 01:57:56 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>uı automation test</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/examples/KarateApi/KarateApi.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">karate ui automation</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">uı automation test</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>31771</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure driver = {type:&#39;chromedriver&#39; , executable:&#39;src/test/java/chromedriver.exe&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">34</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">13:57:09.153 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>driver &quot;https://open.spotify.com/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">31737</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">13:57:09.219 preferred port 9515 not available, will use: 50064
+13:57:40.953 src/test/java/examples/KarateApi/KarateApi.feature:5
+* driver &quot;https://open.spotify.com/&quot;
+http call failed after 30022 milliseconds for url: http://localhost:50064/session/a7029419890a024cf8131cab60067ddd/url
+src/test/java/examples/KarateApi/KarateApi.feature:5
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref failed">8</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>scenario [run] failed</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">java.util.LinkedHashMap cannot be cast to java.lang.String
+java.lang.ClassCastException: java.util.LinkedHashMap cannot be cast to java.lang.String
+	at com.intuit.karate.driver.WebDriver.screenshot(WebDriver.java:511)
+	at com.intuit.karate.driver.WebDriver.screenshot(WebDriver.java:504)
+	at com.intuit.karate.driver.Driver.onFailure(Driver.java:491)
+	at com.intuit.karate.core.ScenarioRuntime.execute(ScenarioRuntime.java:500)
+	at com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:402)
+	at com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at com.intuit.karate.core.FeatureRuntime.run(FeatureRuntime.java:164)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at com.intuit.karate.core.SyncExecutorService.execute(SyncExecutorService.java:70)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at com.intuit.karate.Suite.run(Suite.java:235)
+	at com.intuit.karate.Runner$Builder.parallel(Runner.java:575)
+	at com.intuit.karate.cli.IdeMain.main(IdeMain.java:60)
+	at cucumber.api.cli.Main.main(Main.java:34)
+13:57:40.966 src/test/java/examples/KarateApi/KarateApi.feature:5
+* driver &quot;https://open.spotify.com/&quot;
+scenario [run] failed
+java.lang.ClassCastException: java.util.LinkedHashMap cannot be cast to java.lang.String
+	at com.intuit.karate.driver.WebDriver.screenshot(WebDriver.java:511)
+	at com.intuit.karate.driver.WebDriver.screenshot(WebDriver.java:504)
+	at com.intuit.karate.driver.Driver.onFailure(Driver.java:491)
+	at com.intuit.karate.core.ScenarioRuntime.execute(ScenarioRuntime.java:500)
+	at com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:402)
+	at com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at com.intuit.karate.core.FeatureRuntime.run(FeatureRuntime.java:164)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at com.intuit.karate.core.SyncExecutorService.execute(SyncExecutorService.java:70)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at com.intuit.karate.Suite.run(Suite.java:235)
+	at com.intuit.karate.Runner$Builder.parallel(Runner.java:575)
+	at com.intuit.karate.cli.IdeMain.main(IdeMain.java:60)
+	at cucumber.api.cli.Main.main(Main.java:34)
+
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

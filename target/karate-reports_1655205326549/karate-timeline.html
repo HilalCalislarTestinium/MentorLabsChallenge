@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/examples\/KarateApi\/KarateApi[1:26]","start":1655204894264,"end":1655204895949,"title":"src\/test\/java\/examples\/KarateApi\/KarateApi[1:26] 14:08:14.264-14:08:15.949 Get Playlist User"},{"id":2,"group":1,"content":"src\/test\/java\/examples\/KarateApi\/KarateApi[2:32]","start":1655204895954,"end":1655204933777,"title":"src\/test\/java\/examples\/KarateApi\/KarateApi[2:32] 14:08:15.954-14:08:53.777 Create Playlist","className":"failed"},{"id":3,"group":1,"content":"src\/test\/java\/examples\/KarateApi\/KarateApi[3:38]","start":1655204933785,"end":1655204935342,"title":"src\/test\/java\/examples\/KarateApi\/KarateApi[3:38] 14:08:53.785-14:08:55.342 Search Bohemian Rhapsody"},{"id":4,"group":1,"content":"src\/test\/java\/examples\/KarateApi\/KarateApi[4:47]","start":1655204935348,"end":1655204935675,"title":"src\/test\/java\/examples\/KarateApi\/KarateApi[4:47] 14:08:55.348-14:08:55.675 Add tracks to Playlist"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

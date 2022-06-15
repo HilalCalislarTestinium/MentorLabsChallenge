@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/examples\/KarateApi\/KarateApi[1:23]","start":1655234112355,"end":1655234113367,"title":"src\/test\/java\/examples\/KarateApi\/KarateApi[1:23] 22:15:12.355-22:15:13.367 Get Playlist User"},{"id":2,"group":1,"content":"src\/test\/java\/examples\/KarateApi\/KarateApi[2:30]","start":1655234113376,"end":1655234113725,"title":"src\/test\/java\/examples\/KarateApi\/KarateApi[2:30] 22:15:13.376-22:15:13.725 Create Playlist"},{"id":3,"group":1,"content":"src\/test\/java\/examples\/KarateApi\/KarateApi[3:39]","start":1655234113734,"end":1655234114025,"title":"src\/test\/java\/examples\/KarateApi\/KarateApi[3:39] 22:15:13.734-22:15:14.025 Search Bohemian Rhapsody"},{"id":4,"group":1,"content":"src\/test\/java\/examples\/KarateApi\/KarateApi[4:49]","start":1655234114034,"end":1655234114911,"title":"src\/test\/java\/examples\/KarateApi\/KarateApi[4:49] 22:15:14.034-22:15:14.911 Add tracks to Playlist"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
