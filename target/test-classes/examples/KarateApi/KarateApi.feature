@@ -2,7 +2,7 @@ Feature: Karate Api Testi
   Background:
     * def urlAdi = 'https://open.spotify.com/'
     * def userId = '31ekssjamah2psknmlcofd6potuq'
-    * def token = 'Bearer BQCHdDKgCzRrSNeVEFf7QpdCNaSpAOkhRE-ab4bGH11N_pnzkYS9r61sjiM5GSHlQkywuihNBGYu5epqqnJf_SNbygfJ-QH9gbmxXi4XlkIyN2ER_LXkXQVGh8vdqiuaxl-PBH9qez5c4XdHWwqysg_Yh55vUtotloYwQ1NWKRTBdDv_RqGsnt-a3H0cG4MWcoCSnNropzzblFSqtLjkKcOVuWhmFOjRqmB3fxffMnF5ZJFC2cEQsM8aDYj5fv3440ZZFJ7QEbMWp-8vLSTE7OA'
+    * def token = 'Bearer BQDzdRY66ttmqVYoPOiRT1Cbvb4A0mhJ2v4ftuvEL9KOcJC_ThCP16ukuKnqrOmVare9WkxLTwpYg0QYrkP7XB4TWX2Y5bJ-qPH8qDfd22DmWO9_Uz3u9ULXBp3R9ad_HtfFtF7vlVTu1DDb3IC0fpmN8rHLCEPSHC7LfkMQOwGQFM9O2vidGUr2V3_P64IuTo7Y2CzQCrm-CZrh60QrdcZ77LohzlX0v_CVmabG8EH1peNVqxaD1wY_uUx-hDhyW4hkmfADXZkHVcuwQZI8U0Ze'
     * def requestBody =
  """
 {

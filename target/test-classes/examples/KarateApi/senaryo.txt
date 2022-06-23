@@ -1,0 +1,15 @@
+* Chrome driver ayağa kaldırılır.
+* 'https://open.spotify.com/' sayfası açılır.
+* Anasayfada 'Oturum aç' seçeneği tıklanır.
+* 'E-posta adresi veya kullanıcı adı' kutusuna geçerli bir e-posta girilir.
+* 'Parola' kutusuna geçerli bir parola girilir.
+* 'OTURUM AÇ' seçeneğine tıklanır.
+* Açılan anasayfada 'Çalma Listesi Oluştur' seçeneğine tıklanır.
+* Çalma listesinin adının üzerine tıklanır.
+* Çalma listesinin adı 'Name' kutusundan 'MentorLabs Faz2' olarak değiştirilir.
+* 'Kaydet' seçeneğine tıklanır.
+* 'Şarkı veya bölüm ara' kutusuna 'The Final Countdown' yazdırılır.
+* İlk çıkan parça için ekle tuşuna tıklanır.
+* Listeye eklenen sarkının doğru parça olduğu kontrol edilir.
+* Şarkı 10 saniye oynatılır.
+* Şarkı durdurulur.
